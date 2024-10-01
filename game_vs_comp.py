@@ -6,6 +6,7 @@
 ##9--20%
 import random
 
+
 def success(f):
     pr = 1 - (f - 1) / 10
     return random.random() < pr
