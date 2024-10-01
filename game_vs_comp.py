@@ -26,7 +26,7 @@ def play():
             print("You can't fool me. Enter your f strength, 1<=f<=9")
             f = int(input())
         
-        if success(f)==True:
+        if success(f):
             hp2 -= f
             print("Congratulations! You've hit the target!")
             print(hp1, '- Your health;', hp2, "- Computer's Health")
@@ -35,13 +35,13 @@ def play():
             print("Alas, you couldn't hit the target!")
             print(hp1, '- Your health;', hp2, "- Computer's Health")
             print()
-        if hp2<=0:
+        if hp2 <= 0:
             print('Congratulations you have won')
             break
 
         f = random.randint(1, 9)
         print('The power of the computer f is equal to', f)
-        if success(f)==True:
+        if success(f):
             hp1 -= f
             print('The computer hit the target')
             print(hp1, '- Your health;', hp2, "- Computer's Health")
@@ -49,13 +49,13 @@ def play():
         else:
             print('The computer missed its target')
             print()
-        if hp1<=0:
+        if hp1 <= 0:
             print('Alas, you have lost')
             break
 
 ans = input('Do you want to play a game? (y=yes, n=no)')
 print(ans)
-if ans.lower()=='y' or ans.lower()=='н':
+if ans.lower() =='y' or ans.lower() =='н':
     play()
 else:
     print('Okay, come back later!')
