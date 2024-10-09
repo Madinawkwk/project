@@ -53,6 +53,7 @@ def play():
             print('Alas, you have lost')
             break
 
+
 ans = input('Do you want to play a game? (y=yes, n=no)')
 print(ans)
 if ans.lower() =='y' or ans.lower() =='н':
