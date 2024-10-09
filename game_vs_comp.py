@@ -46,7 +46,7 @@ def game():
             break
 
         if ans.lower() == 'h':
-            print('Enter your opp f strength, 1<=f<=9')
+            print('Enter your Opponent f strength, 1<=f<=9')
             f = int(input())
             if not is_valid(f):
                 print("You can't fool me. Enter your opp f strength, 1<=f<=9")
