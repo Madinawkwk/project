@@ -23,7 +23,7 @@ def opp(hp1, hp2, f):
 
     
 def game():
-    hp1, hp2 = 20, 20
+    hp1, hp2 = 50, 50
     print("Great! Let's get started!") 
     while hp1 >= 0 and hp2 >= 0:  
         print('Enter your f strength, 1<=f<=9')
